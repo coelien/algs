@@ -1,4 +1,4 @@
-package algs.exercise.c3.s3;
+//package algs.exercise.c3.s3;
 
 import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.Point2D;
@@ -38,6 +38,7 @@ public class PointSET {
 	}
 	public Iterable<Point2D> range(RectHV rect)// all points that are inside the rectangle (or on the boundary)
 	{
+		if(rect == null) throw new IllegalArgumentException("argument is empty");
 		Bag<Point2D> bag = new Bag<Point2D>();
 		for(Point2D i : set) {
 			if(rect.contains(i))
@@ -47,9 +48,10 @@ public class PointSET {
 	}
 	public Point2D nearest(Point2D p)          // a nearest neighbor in the set to point p; null if the set is empty
 	{
+		if(p == null) throw new IllegalArgumentException("argument is empty");
 		if (isEmpty())
 			return null;
-		double min = 1.0;
+		double min = 2.0;
 		Point2D np = null;
 		for(Point2D i : set) {
 			if(p.distanceTo(i)<min)
