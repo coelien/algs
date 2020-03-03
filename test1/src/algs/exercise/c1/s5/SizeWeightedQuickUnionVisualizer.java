@@ -1,4 +1,4 @@
-//package algs.exercise.c1.s5;
+package algs.exercise.c1.s5;
 
 import java.awt.Font;
 
