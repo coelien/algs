@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/DELL/Downloads/algs4.jar"/>
+	<classpathentry exported="true" kind="var" path="USER_HOME/Documents/IMPORTANTFILES/mylib/algs4.jar" sourcepath="/USER_HOME/Documents/IMPORTANTFILES/mylib/algs4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

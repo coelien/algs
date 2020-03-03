@@ -1,4 +1,4 @@
-//package algs.exercise.c1.s5;
+package algs.exercise.c1.s5;
 
 import edu.princeton.cs.algs4.In;
 
@@ -19,7 +19,7 @@ public class UF {
 		}
 	}
 	
-	public void addEdge(int m, int n) {
+	public void union(int m, int n) {
 		int number = 0;
 		if(!isConnected(m, n)) {
 			int cu,pre;
@@ -51,25 +51,26 @@ public class UF {
 					number++;
 				}
 			}
-			
+			/*
 			System.out.print("the array content is: ");
 			for(int i = 0;i < size;i++) {
 				System.out.print(array[i]+" ");
 			}
 			System.out.print("number of array accesses: " + number);
-			
+			*/
 			sum+=number;
-			System.out.println();
+			//System.out.println();
 		}
 		else {
+			/*
 			System.out.print("the array content is: ");
 			for(int i = 0;i < size;i++) {
 				System.out.print(array[i]+" ");
 			}
 			System.out.print("number of array accesses: " + 2);
-			
+			*/
 			sum+=2;
-			System.out.println();
+			//System.out.println();
 		}
 	}
 	
@@ -100,9 +101,9 @@ public class UF {
 			int m = in.readInt();
 			int n = in.readInt();
 			if(u.isConnected(m, n)) continue;
-			u.addEdge(m, n);
+			u.union(m, n);
 		}
-		System.out.println("the number of components is "+ u.count()+" the number of total array accesses is "+u.sum);
+		//System.out.println("the number of components is "+ u.count()+" the number of total array accesses is "+u.sum);
 	}
 
 }
